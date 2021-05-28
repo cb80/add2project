@@ -1,0 +1,22 @@
+---
+name: Add new issues to projects
+
+on:
+  issues:
+    types: [opened]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Add issue to repo project
+      uses: ./
+      with:
+        project: test4repo
+        column: To do
+    - name: Add issue to user project
+      uses: ./
+      with:
+        home: users/cb80
+        project: test4user
+        column: To do
+        token: ${{ secrets.MY_TOKEN }}
