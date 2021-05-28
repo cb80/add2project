@@ -1,0 +1,24 @@
+name: 'Add issue to a project'
+description: 'Add issue to a project. It supports GitHub Enterprise.'
+author: 'Chris Burkert (https://github.com/cb80)'
+inputs:
+  project:
+    description: 'Project name'
+    required: true
+  column:
+    description: 'Column name'
+    required: true
+  home:
+    description: 'Home where the repository lives, default: the same repository the action runs'
+    required: false
+    default: repos/${{ github.repository }}
+  token:
+    description: 'GitHub token, default: the auto generated token'
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'box'
+  color: 'blue'
