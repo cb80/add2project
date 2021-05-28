@@ -1,0 +1,24 @@
+---
+name: Add new pull requests to projects
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Add pull request to repo project
+      uses: ./
+      with:
+        project: test4repo
+        column: In progress
+    - name: Add pull request to user project
+      uses: ./
+      with:
+        home: users/cb80
+        project: test4user
+        column: In progress
+        token: ${{ secrets.PROJECT_TOKEN }}
