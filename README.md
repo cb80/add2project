@@ -1,4 +1,5 @@
 ![CI/CD](https://github.com/cb80/add2project/workflows/CI/CD/badge.svg)
+[![](https://img.shields.io/badge/GitHub-Marketplace-blue)](https://github.com/marketplace/actions/add-issues-and-pull-requests-to-a-project)
 
 # Description
 
