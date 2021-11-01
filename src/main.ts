@@ -20,7 +20,7 @@ const getIdOfUserProject = async function (
     });
 
     core.debug(JSON.stringify(projects));
-    if (projects.lenght === 0) {
+    if (projects.length === 0) {
       return 0;
     }
     for (const proj of projects) {
@@ -53,7 +53,7 @@ const getIdOfRepoProject = async function (
     });
 
     core.debug(JSON.stringify(projects));
-    if (projects.lenght === 0) {
+    if (projects.length === 0) {
       return 0;
     }
     for (const proj of projects) {
@@ -84,7 +84,7 @@ const getIdOfOrgProject = async function (
     });
 
     core.debug(JSON.stringify(projects));
-    if (projects.lenght === 0) {
+    if (projects.length === 0) {
       return 0;
     }
     for (const proj of projects) {

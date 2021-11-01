@@ -51,7 +51,7 @@ const getIdOfUserProject = function (octokit, username, name) {
                 page: i
             });
             core.debug(JSON.stringify(projects));
-            if (projects.lenght === 0) {
+            if (projects.length === 0) {
                 return 0;
             }
             for (const proj of projects) {
@@ -78,7 +78,7 @@ const getIdOfRepoProject = function (octokit, owner, repo, name) {
                 page: i
             });
             core.debug(JSON.stringify(projects));
-            if (projects.lenght === 0) {
+            if (projects.length === 0) {
                 return 0;
             }
             for (const proj of projects) {
@@ -104,7 +104,7 @@ const getIdOfOrgProject = function (octokit, org, name) {
                 page: i
             });
             core.debug(JSON.stringify(projects));
-            if (projects.lenght === 0) {
+            if (projects.length === 0) {
                 return 0;
             }
             for (const proj of projects) {
