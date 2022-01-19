@@ -8,12 +8,21 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Set up node16
+      uses: actions/setup-node@v2
+      with:
+        node-version: 16
+
     - name: Add issue to repo project
       uses: ./
       with:
         project: test4repo
         column: To do
+
     - name: Add issue to user project
       uses: ./
       with:
