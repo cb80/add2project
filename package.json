@@ -1,7 +1,7 @@
 {
   "name": "add2project",
   "description": "Add issue to a project. It supports GitHub Enterprise.",
-  "version": "0.15.0",
+  "version": "0.16.0",
   "author": "Chris Burkert (https://github.com/cb80)",
   "license": "MIT",
   "main": "lib/main.js",
