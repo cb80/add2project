@@ -11,12 +11,6 @@
         "filter": { "regex": "^(per_page|project_id|column_id|content_id|content_type)$", "match": false }
       }
     ],
-    "@typescript-eslint/no-floating-promises": "off",
-    "@typescript-eslint/no-implicit-any-catch": [
-      "error",
-      {
-        "allowExplicitAny": true
-      }
-    ]
+    "@typescript-eslint/no-floating-promises": "off"
   }
 }
